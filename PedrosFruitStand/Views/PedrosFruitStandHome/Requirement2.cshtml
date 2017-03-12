@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Requirement2";
+}
+<script src="~/Scripts/jquery-2.1.4.js"></script>
+<script src="~/Scripts/CustomJS/Storage/StorageBinJS.js"></script>
+<script src="~/Scripts/CustomJS/Requirement2JS/Req2JS.js"></script>
+
+<center><h2>Requirement2</h2></center>
+
+<div class="container">
+    <div class="form-horizontal" id="divDateRange">
+        <div class="row row-splitter">
+            <label for="dpFrom" class="col-md-2 control-label">Date From</label>
+            <div class="col-md-2">
+                <input id="dpFrom" required name="dpFrom" data-required-msg="From Date Required" />
+                <span class="k-invalid-msg" data-for="dpFrom"></span>
+            </div>
+
+            <label for="dpTo" class="col-md-2 control-label">Date To</label>
+            <div class="col-md-2">
+                <input id="dpTo" required name="dpTo" data-required-msg="To Date Required" />
+                <span class="k-invalid-msg" data-for="dpTo"></span>
+            </div>
+            <div class="col-md-offset-1">
+                <button type="button" id="btnGetData" class="btn btn-primary">Get</button>
+            </div>
+        </div>
+        <div class="row row-splitter">
+            <div id="grid"></div>
+        </div>
+    </div>
+</div>

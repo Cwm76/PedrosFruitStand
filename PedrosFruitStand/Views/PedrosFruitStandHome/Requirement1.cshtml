@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Requirement1";
+}
+
+<script src="~/Scripts/jquery-2.1.4.js"></script>
+<script src="~/Scripts/CustomJS/Requirement1JS/Req1JS.js"></script>
+
+<h2>Requirement1</h2>
+
+<div class="container">
+
+    <div class="form-horizontal" id="divAddFruit">
+
+        <div class="row row-splitter">
+            <center><h2>Receipt</h2></center>
+        </div>
+        <div class="row row-splitter">
+            <center><h4><label id="soldDate" style="text-align:center">@DateTime.Now.ToString("yyyy/MM/dd")</label></h4></center>
+        </div>
+        <div class="row row-splitter">
+            <label for="ddFruits" class="col-md-1 control-label col-md-offset-1">Fruit</label>
+            <div class="col-md-2">
+                <input type="text" id="ddFruits" required name="ddFruits" data-required-msg="Fruit Required" />
+                <span class="k-invalid-msg" data-for="ddFruits"></span>
+            </div>
+
+            <label for="ddFruits" class="col-md-1 control-label">Quantity</label>
+            <div class="col-md-2">
+                <input type="text" id="Qty" required name="Qty" data-required-msg="Qty Required" />
+                <span class="k-invalid-msg" data-for="Qty"></span>
+            </div>
+
+            <label for="txtCost" class="col-md-1 control-label">Cost</label>
+            <div class="col-md-1">
+                <input type="text" id="txtCost" class="form-control" placeholder="$$$$" maxlength="5"  required name="txtCost" data-required-msg="Cost Required"/>
+                <span class="k-invalid-msg" data-for="txtCost"></span>
+            </div>
+
+            <div class="col-md-1">
+                <button id="btnSave" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div class="row row-splitter">
+            <div class="col-md-offset-1">
+                <div id="gdTally"></div>
+            </div>
+        </div>
+    </div>
+</div>
